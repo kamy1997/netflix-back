@@ -35,7 +35,7 @@ app.use(function (req, res, next) {
 app.use('/api/v1/', apiRouter);
 
 exports.start = () => {
-  app.listen(port || '5000', (err) => {
+  app.listen(port, (err) => {
     if (err) {
       console.log(`Errors: ${err}`);
       process.exit(-1);
