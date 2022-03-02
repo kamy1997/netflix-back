@@ -7,6 +7,9 @@ const orderRouter = require('./order.route');
 const productRouter = require('./product.route');
 ;
 router.use('/users/', usersRouter);
+router.use('/checkout',checkoutRouter);
+router.use('/webhooks',webHooksRouter);
+router.use('/order',orderRouter);
 router.use('/products/', productRouter);
 
 module.exports = router;
